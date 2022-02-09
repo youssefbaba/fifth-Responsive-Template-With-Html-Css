@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template | Joson</title>
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="Css/style.css">
+    <!-- Normalize -->
+    <link rel="stylesheet" href="Css/normalize.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="Css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Start Header -->
+    <div class="home-page">
+        <header>
+            <a href="#" class="logo">
+                <span>Joson</span>
+                <span>college</span>
+            </a>
+            <i class="fa-solid fa-bars hide" onclick="myFunction()"></i>
+            <nav id="my-nav" class="navigation">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Coures</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </nav>
+        </header>
+        <div class="landing">
+            <div class="text">
+                <h2>education</h2>
+                <a href="#">Read More</a>
+                <ul class="bullets">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- End Header -->
+    <script>
+        function myFunction() {
+            var element = document.getElementById("my-nav");
+            element.classList.toggle("show");
+        }
+    </script>
+</body>
+
+</html>

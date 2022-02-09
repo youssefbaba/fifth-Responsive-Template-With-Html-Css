@@ -1,0 +1,252 @@
+/* Start Global Rules */
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --color-white: #ffffff;
+    --secondary-color: #133e3f;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: auto;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .container {
+        width: 1140px;
+    }
+}
+
+/* End Global Rules */
+/* Start Home Page */
+.home-page {
+    background-image: url("../images/home-page.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+/* Start Header */
+.home-page header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px 0 40px;
+}
+
+.home-page header .logo {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.home-page header .logo span:first-of-type {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.51;
+    color: var(--color-white);
+}
+
+.home-page header .logo span:last-of-type {
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--secondary-color);
+    margin-top: -15px;
+}
+
+.home-page header i {
+    color: var(--color-white);
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.home-page header nav.navigation {
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: 15px;
+    display: none;
+}
+
+.home-page header nav.show {
+    display: flex;
+}
+
+.home-page header nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-page header nav ul li {
+    margin: 5px 0;
+}
+
+.home-page header nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--color-white);
+    display: block;
+    padding: 18px 20px;
+    width: fit-content;
+    transition: background-color 0.3s;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+
+.home-page header nav ul li:first-child a,
+.home-page header nav ul li a:hover {
+    background-color: var(--secondary-color);
+}
+
+.home-page header nav i {
+    padding: 18px 20px;
+}
+
+/* End Header */
+/* Start Landing*/
+
+.home-page .landing .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.home-page .landing .text h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 2.23;
+    letter-spacing: 4px;
+    color: var(--color-white);
+}
+
+.home-page .landing .text a {
+    display: block;
+    text-decoration: none;
+    width: fit-content;
+    padding: 10px 35px;
+    color: var(--color-white);
+    font-weight: 400;
+    font-size: 17px;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    margin-top: 30px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.home-page .landing .text a:hover {
+    background-color: transparent;
+    color: var(--secondary-color);
+}
+
+.home-page .landing .text ul.bullets {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.home-page .landing .text ul.bullets li {
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--color-white);
+    border-radius: 50%;
+    cursor: pointer
+}
+
+.home-page .landing .text ul.bullets li:first-child {
+    border-color: var(--secondary-color);
+}
+
+.home-page .landing .text ul.bullets li:active,
+.home-page .landing .text ul.bullets li:hover {
+    border-color: var(--secondary-color);
+}
+
+@media (min-width: 992px) {
+    .home-page {
+        height: 100vh;
+        position: relative;
+    }
+
+    .home-page header {
+        height: 100px;
+        padding-top: 0;
+    }
+
+    .home-page .landing .text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .home-page header nav.navigation {
+        width: initial;
+        display: flex;
+        flex-direction: row;
+        margin-top: 0px;
+    }
+
+    .home-page header nav ul {
+        flex-direction: row;
+    }
+
+    .home-page header nav ul li {
+        margin: 0 5px;
+    }
+
+    .home-page header nav ul li a,
+    .home-page header nav i {
+        height: 100px;
+        line-height: 100px;
+    }
+
+    .home-page header i.hide {
+        display: none;
+    }
+
+}
+
+/* End Landing*/
+/* End Home Page */
