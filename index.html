@@ -2,26 +2,27 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Template | Joson</title>
     <!-- Main Stylesheet -->
-    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/style.css" />
     <!-- Normalize -->
-    <link rel="stylesheet" href="Css/normalize.css">
+    <link rel="stylesheet" href="Css/normalize.css" />
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="Css/all.min.css">
+    <link rel="stylesheet" href="Css/all.min.css" />
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
 </head>
 
 <body>
-    <!-- Start Header -->
+    <!-- Start Home Page -->
     <div class="home-page">
+        <!-- Start Header -->
         <header>
             <a href="#" class="logo">
                 <span>Joson</span>
@@ -30,33 +31,154 @@
             <i class="fa-solid fa-bars hide" onclick="myFunction()"></i>
             <nav id="my-nav" class="navigation">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Coures</a></li>
-                    <li><a href="#">Events</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Login</a></li>
+                    <li><a href="index.html" onclick="myFunction_01()">Home</a></li>
+                    <li><a href="#about" onclick="myFunction_01()">About</a></li>
+                    <li><a href="#courses" onclick="myFunction_01()">Courses</a></li>
+                    <li><a href="#events" onclick="myFunction_01()">Events</a></li>
+                    <li><a href="#contact" onclick="myFunction_01()">Contact</a></li>
+                    <li><a href="#login" onclick="myFunction_01()">Login</a></li>
                 </ul>
                 <i class="fa-solid fa-magnifying-glass"></i>
             </nav>
         </header>
+        <!-- End Header -->
+        <!-- Start Landing -->
         <div class="landing">
-            <div class="text">
+            <div class="content">
                 <h2>education</h2>
-                <a href="#">Read More</a>
+                <a href="#" class="special-link">Read More</a>
                 <ul class="bullets">
                     <li></li>
                     <li></li>
                     <li></li>
                 </ul>
             </div>
-
+        </div>
+        <!-- End Landing -->
+    </div>
+    <!-- End Home Page -->
+    <!-- Start services -->
+    <div class="services">
+        <div class="container">
+            <div class="box">
+                <div class="image">
+                    <img src="images/award.png" alt="award" />
+                </div>
+                <div class="info">
+                    <h4>Best <br>
+                        industry leaders</h4>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/study.png" alt="study" />
+                </div>
+                <div class="info">
+                    <h4>Learn <br>
+                        courses online</h4>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/books-stack-of-three.png" alt="books-stack-of-three" />
+                </div>
+                <div class="info">
+                    <h4>book <br>
+                        library & store</h4>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
         </div>
     </div>
+    <!-- End services -->
+    <!-- Start About Us -->
+    <div class="about-us" id="about">
+        <div class="container">
+            <div class="images">
+                <div class="first-image">
+                    <img src="images/about_01.jpg" alt="about_01">
+                </div>
+                <div class="second-image">
+                    <img src="images/about_02.jpg" alt="about_02">
+                </div>
+            </div>
+            <div class="main-heading">
+                <h3>About Our College</h3>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                    looking at its layout. The point of using Lorem Ipsum is that it has a more it </p>
+                <a href="#" class="special-link">Read More</a>
+            </div>
+        </div>
+        <div class="side">
+            <img src="images/side-img.png" alt="side-img">
+        </div>
+    </div>
+    <!-- End About Us -->
+    <!-- Start Courses -->
+    <div class="courses">
+        <div class="container">
+            <div class="main-heading">
+                <h3>Popular courses</h3>
+                <p>It is a long established fact that a reader will be distracted </p>
+            </div>
+            <div class="boxes">
+                <div class="group-boxes-one">
+                    <div class="box">
+                        <img src="images/course_01.jpg" alt="course_01">
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                        <h3>LMS <br>
+                            Content</h3>
+                    </div>
+                    <div class="box">
+                        <img src="images/course_02.jpg" alt="course_02">
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                        <h3>From <br>
+                            Zero to Hero </h3>
+                    </div>
+                </div>
+                <div class="group-boxes-two">
+                    <div class="box">
+                        <img src="images/course_03.jpg" alt="course_03">
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                        <h3>
+                            Learn <br>
+                            Python – Interactive
+                        </h3>
+                    </div>
+                    <div class="box">
+                        <img src="images/course_04.jpg" alt="course_04">
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                        <h3>Your <br>
+                            Complete Guide </h3>
+                    </div>
+                    <div class="box">
+                        <img src="images/course_05.jpg" alt="course_05">
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                        <h3>
+                            Photography
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <a href="#" class="special-link">Read More</a>
+            </div>
+        </div>
+        <div class="side">
+            <img src="images/side-img.png" alt="side-img">
+        </div>
+    </div>
+    <!-- End Courses -->
 
-    <!-- End Header -->
     <script>
         function myFunction() {
+            var element = document.getElementById("my-nav");
+            element.classList.toggle("show");
+        }
+
+        function myFunction_01() {
             var element = document.getElementById("my-nav");
             element.classList.toggle("show");
         }
