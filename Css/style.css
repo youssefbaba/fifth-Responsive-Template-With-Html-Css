@@ -18,7 +18,7 @@ html {
 :root {
     --color-white: #ffffff;
     --secondary-color: #133e3f;
-    --section-padding: 50px;
+    --section-padding: 60px;
     --third-color: #4bc5b8;
 }
 
@@ -74,7 +74,7 @@ ul {
     }
 }
 
-a.special-link {
+.special-link {
     display: block;
     text-decoration: none;
     width: fit-content;
@@ -87,13 +87,13 @@ a.special-link {
     transition: background-color 0.3s, color 0.3s;
 }
 
-a.special-link:hover {
+.special-link:hover {
     background-color: transparent;
     color: var(--secondary-color);
 }
 
 @media (min-width: 992px) {
-    a.special-link {
+    .special-link {
         padding: 15px 45px;
         font-size: 17px;
     }
@@ -352,12 +352,9 @@ a.special-link:hover {
 }
 
 .services .container {
-    padding-top: calc(var(--section-padding) / 2);
-    padding-bottom: calc(var(--section-padding) / 2);
-    padding-left: 15px;
-    padding-right: 15px;
     margin-left: 20px;
     margin-right: 20px;
+    padding: var(--section-padding) 15px;
     background-color: var(--secondary-color);
     border-radius: 20px;
     display: grid;
@@ -513,7 +510,7 @@ a.special-link:hover {
 /* Start Courses  */
 .courses {
     padding-top: var(--section-padding);
-    padding-bottom: calc(var(--section-padding) * 2);
+    padding-bottom: var(--section-padding);
     position: relative;
 }
 
@@ -658,8 +655,8 @@ a.special-link:hover {
 /* End Courses  */
 /* Start Get Online Courses */
 .get-online-courses {
-    padding-top: calc(var(--section-padding) * 2);
-    padding-bottom: calc(var(--section-padding) * 2);
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
     background-image: url("../images/login.png");
     background-repeat: no-repeat;
     background-position: center center;
@@ -803,8 +800,8 @@ a.special-link:hover {
 /* Start Events */
 .events {
     background-color: var(--color-white);
-    padding-top: calc(var(--section-padding) * 2);
-    padding-bottom: calc(var(--section-padding) * 2);
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
 }
 
 .events .container {
@@ -961,8 +958,8 @@ a.special-link:hover {
 /* Start Opinions  */
 .opinions {
     background-color: var(--color-white);
-    padding-top: calc(var(--section-padding) * 2);
-    padding-bottom: calc(var(--section-padding) * 2);
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
 }
 
 .opinions .container {
@@ -1085,8 +1082,8 @@ a.special-link:hover {
 
 .contact-us {
     background-color: #0b5356;
-    padding-bottom: calc(var(--section-padding) * 2);
-    margin-bottom: calc(var(--section-padding) * 2);
+    padding-bottom: var(--section-padding);
+    margin-bottom: var(--section-padding);
     position: relative;
 }
 
@@ -1197,7 +1194,7 @@ a.special-link:hover {
 
 @media (min-width: 768px) {
     .contact-us {
-        padding-top: calc(var(--section-padding) * 2);
+        padding-top: var(--section-padding);
     }
 
     .contact-us::before {
@@ -1271,7 +1268,7 @@ a.special-link:hover {
 /* Start Footer */
 footer {
     background-color: #121111;
-    padding-top: calc(var(--section-padding) * 2);
+    padding-top: var(--section-padding);
     position: relative;
 }
 
