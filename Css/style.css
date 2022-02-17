@@ -558,20 +558,25 @@ ul {
     background-color: rgba(19, 62, 63, 0.9);
     border-radius: 10px;
     display: none;
+    cursor: pointer;
 }
 
 .courses .container .boxes .box:hover::before,
-.courses .container .boxes .box:hover a {
+.courses .container .boxes .box:hover a:last-of-type {
     display: block;
 }
 
-.courses .container .boxes .box img {
+.courses .container .boxes .box a:first-of-type {
+    display: block;
+}
+
+.courses .container .boxes .box a:first-of-type img {
     display: block;
     width: 100%;
     border-radius: 10px;
 }
 
-.courses .container .boxes .box a {
+.courses .container .boxes .box a:last-of-type {
     width: 60px;
     height: 60px;
     line-height: 60px;
